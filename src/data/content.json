@@ -1,0 +1,16 @@
+{
+    "about": {
+        "content": "Welcome to my portfolio! My name is Ojas Baral and I'm a sophomore at the University of Colorado Boulder, where I'm pursuing a Bachelor of Science in Computer Science with a minor in Business. As an aspiring software engineer, I'm constantly driven to explore and create innovative solutions. In addition to my academic pursuits, I have worked on various personal projects that have allowed me to hone my skills and expand my knowledge. During my free time, I enjoy immersing myself in coding and pushing the boundaries of what's possible. Feel free to browse through my portfolio and learn more about my journey in the world of software development.",
+        "GPA": "3.96/4.0",
+        "DL": "Fall 2022 - Spring 2023",
+        "RC": "Starting Computing, Data Structures, Computer Systems, Software Development, Database Systems"
+    },
+    "exp": [
+        {
+            "company": "Lavner Education",
+            "title": "Information Technology Intern",
+            "time": "June - August 2023",
+            "tasks": ["Installed and configured software applications on clients devices to enhance learning experiences for students.", "Delivered technical support and troubleshooting assistance to students, promptly addressing on-site software-related issues and minimizing downtime with no outrage longer than 30 minutes.", "Mentored 10 students on coding languages such as Python and Java, imparting fundamental programming concepts and fostering proficiency in software development resulting in competence with skills like object-orienting programming", "Facilitated the learning of machine learning and web development to students, equipping students with the ability todesign their own machine learning models or develop an efficient functioning web application.", "Instructed and guided 10 students in the programming of robots, fostering their understanding of robotics principles and empowering them to develop functional and interactive robot applications."]
+        }
+    ]
+}
