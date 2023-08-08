@@ -12,10 +12,26 @@
   font-family: 'Poppins', sans-serif;
   color: white;
   background-color: #1E1E1E;
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: dark;
 }
 
 @media (max-width: 640px){
-  .list, .bar{
+  .list, .bar, .bottom{
     flex-direction: column;
   }
+}
+
+@keyframes fadeIn{
+  0% {opacity:0.01;}
+  100% {opacity:1;}
+}
+
+.main-page{
+  animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-delay: calc(var(--scroll) * -1s);
 }

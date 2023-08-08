@@ -12,5 +12,31 @@
             "time": "June - August 2023",
             "tasks": ["Installed and configured software applications on clients devices to enhance learning experiences for students.", "Delivered technical support and troubleshooting assistance to students, promptly addressing on-site software-related issues and minimizing downtime with no outrage longer than 30 minutes.", "Mentored 10 students on coding languages such as Python and Java, imparting fundamental programming concepts and fostering proficiency in software development resulting in competence with skills like object-orienting programming", "Facilitated the learning of machine learning and web development to students, equipping students with the ability todesign their own machine learning models or develop an efficient functioning web application.", "Instructed and guided 10 students in the programming of robots, fostering their understanding of robotics principles and empowering them to develop functional and interactive robot applications."]
         }
-    ]
+    ],
+    "projects": [
+        {
+            "name": "One Take A Day",
+            "tech": "JavaScript, ReactJS, Node.js, Express.js, PostgreSQL, Tailwind CSS, Render",
+            "time": "June - July 2023",
+            "website": "https://www.onetakeaday.com",
+            "github": "https://github.com/ojasbaral/one-take-a-day",
+            "desc": ["Web application allowing registered users to post sports opinions with like/comment, follow, and hashtag functionality", "Developed a REST API using appropriate HTTP methods to handle data interactions between the frontend and backend.", "Utilized JWT libraries and frameworks to integrate token-based authentication into API endpoints and web-routes.", "Designed and implemented relational database models using PostgreSQL, establishing relationships such as one-to-one, one-to-many, and many-to-many to efficiently organize and query data.", "Leveraged SQL’s powerful features such as JOINs, subqueries and aggregate functions to write effective queries which efficiently retrieve and manipulate data from multiple tables", "Developed an aesthetically pleasing and efficient user interface by leveraging ReactJS and Tailwind CSS.", " Leveraged Render’s platform to deploy the frontend, backend, and database infrastructure, streamlining the deployment process and minimizing setup complexities."]
+        },
+        {
+            "name": "Mini Git Clone",
+            "tech": "C++, GoogleTest",
+            "time": "December 2022",
+            "website": null,
+            "github": "https://github.com/ojasbaral/minigit",
+            "desc": ["Developed and tested a mini version of Git, leveraging various data structures to enable efficient version control and code management.", "Implemented a linked list data structure to efficiently store and manage staged files in a project.", " Created a commit feature that automatically copies and stores newly created or modified staged files in the Git directory, preserving their version number for effective version control.", " Leveraged hash tables to create an efficient search method for commit messages using a single keyword, enhancing the ability to locate specific commits quickly.", "Developed a checkout feature that searches a doubly linked list storing the commits and replaces the current directory with the specific commit selected by the user.", "Employed Google Test framework to create comprehensive test cases for the hash table implementation."]
+        }
+    ],
+    "additional": {
+        "PL": "JavaScript, Python, C++, SQL (PostgreSQL), NoSQL (MongoDB), HTML, CSS",
+        "libraries": "ReactJS, Express.js, Node.js, Tailwind CSS",
+        "tools": "Git, Visual Studio Code",
+        "linkedin": "https://www.linkedin.com/in/ojasbaral/",
+        "github": "https://github.com/ojasbaral/",
+        "email": "ojas.baral@gmail.com"
+    }
 }

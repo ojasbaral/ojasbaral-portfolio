@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
+import { CSSTransition } from 'react-transition-group';
 
 const Header = () => {
     const [collapsed, setCollapsed] = useState(true)
@@ -10,11 +11,11 @@ const Header = () => {
             <div className="font-bold text-xl">Ojas Baral</div>
             <AiOutlineMenu size={23} className="menu visible sm:invisible cursor-pointer" onClick={() => collapsed?setCollapsed(false):setCollapsed(true)}></AiOutlineMenu>
             </div>
-            <ul className={collapsed?'hidden sm:flex list justify-between items-center gap-8':'flex list sm:justify-between sm:items-center sm:gap-8 gap-2 pt-2 text-center text-base w-full sm:w-auto'}>
-                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a className="">About</a></li>
-                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a>Experience</a></li>
-                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a>Projects</a></li>
-                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a>Additional</a></li>
+            <ul className={collapsed?'hidden sm:flex list justify-between items-center gap-8':' flex list sm:justify-between sm:items-center sm:gap-8 gap-2 pt-2 text-center text-base w-full sm:w-auto'}>
+                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#about" className="" onClick={() => setCollapsed(true)}>About</a></li>
+                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#experience" onClick={() => setCollapsed(true)}>Experience</a></li>
+                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#projects" onClick={() => setCollapsed(true)}>Projects</a></li>
+                <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#additional" onClick={() => setCollapsed(true)}>Additional</a></li>
             </ul>
         </div>
     </div>
