@@ -49,7 +49,7 @@ function App() {
 
     <div id="projects" className="h-[75px]"></div>
 
-    <div className="max-w-[1200px] m-auto p-4 main-page">
+    <div className="max-w-[1200px] m-auto p-4">
       <h1 className="text-2xl">Projects</h1>
       {content.projects.map((project, index) => (
         <div>

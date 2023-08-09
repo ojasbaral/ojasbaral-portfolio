@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import { CSSTransition } from 'react-transition-group';
 
 const Header = () => {
@@ -9,9 +9,9 @@ const Header = () => {
         <div className="bar max-w-[1560px] m-auto flex justify-between p-4 items-center">
             <div className="flex justify-between items-center w-full pl-4">
             <div className="font-bold text-xl">Ojas Baral</div>
-            <AiOutlineMenu size={23} className="menu visible sm:invisible cursor-pointer" onClick={() => collapsed?setCollapsed(false):setCollapsed(true)}></AiOutlineMenu>
+            {collapsed?<AiOutlineMenu size={23} className="menu visible md:invisible cursor-pointer" onClick={() => collapsed?setCollapsed(false):setCollapsed(true)}></AiOutlineMenu>:<AiOutlineClose  size={23} className="menu visible md:invisible cursor-pointer" onClick={() => collapsed?setCollapsed(false):setCollapsed(true)}></AiOutlineClose>}
             </div>
-            <ul className={collapsed?'hidden sm:flex list justify-between items-center gap-8':' flex list sm:justify-between sm:items-center sm:gap-8 gap-2 pt-2 text-center text-base w-full sm:w-auto'}>
+            <ul className={collapsed?' hidden header-drop-down-exit md:flex list sm:justify-between sm:items-center md:gap-4 gap-2 pt-2 text-center text-base w-full sm:w-auto':' header-drop-down-enter flex list sm:justify-between sm:items-center md:gap-4 gap-2 pt-2 text-center text-base w-full sm:w-auto'}>
                 <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#about" className="" onClick={() => setCollapsed(true)}>About</a></li>
                 <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#experience" onClick={() => setCollapsed(true)}>Experience</a></li>
                 <li className="hover:underline w-full p-2 cursor-pointer rounded"><a href="#projects" onClick={() => setCollapsed(true)}>Projects</a></li>

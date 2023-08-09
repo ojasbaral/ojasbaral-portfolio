@@ -19,19 +19,65 @@
   color-scheme: dark;
 }
 
-@media (max-width: 640px){
+@media (max-width: 768px){
   .list, .bar, .bottom{
     flex-direction: column;
   }
+  .header-drop-down-enter {
+    animation-duration: 500ms;
+    animation-name: fadeIn; 
+  }
+  
+  .header-drop-down-exit {
+    display:flex;
+    animation-duration: 500ms;
+    animation-name: fadeOut;
+    animation-fill-mode: forwards; 
+  }
+  .navbar {
+    animation: none;
+  }
 }
+
+
 
 @keyframes fadeIn{
   0% {opacity:0.01;}
   100% {opacity:1;}
 }
 
+@keyframes fadeOut{
+  0% {opacity:1;}
+  100% {
+    opacity:0;
+    display: none;
+  }
+}
+
+@keyframes slideDown{
+  0%{ 
+    transform: translateY(-20%);
+    opacity: 0.01;
+    width:auto;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .main-page{
   animation-duration: 2s;
   animation-name: fadeIn;
-  animation-delay: calc(var(--scroll) * -1s);
 }
+
+.options{
+  animation-duration: 2s;
+  animation-name: fadeIn; 
+}
+
+.navbar{
+  animation-duration: 2s;
+  animation-name: fadeIn;
+}
+
