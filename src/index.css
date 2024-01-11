@@ -1,17 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   scroll-behavior: smooth;
 }
 
@@ -19,65 +17,43 @@
   color-scheme: dark;
 }
 
-@media (max-width: 768px){
-  .list, .bar, .bottom{
-    flex-direction: column;
-  }
-  .header-drop-down-enter {
-    animation-duration: 500ms;
-    animation-name: fadeIn; 
-  }
-  
-  .header-drop-down-exit {
-    display:flex;
-    animation-duration: 500ms;
-    animation-name: fadeOut;
-    animation-fill-mode: forwards; 
-  }
-  .navbar {
-    animation: none;
-  }
-}
-
-
-
-@keyframes fadeIn{
-  0% {opacity:0.01;}
-  100% {opacity:1;}
-}
-
-@keyframes fadeOut{
-  0% {opacity:1;}
-  100% {
-    opacity:0;
+@media (max-width: 768px) {
+  .elements,
+  .menu {
     display: none;
   }
+
 }
 
-@keyframes slideDown{
-  0%{ 
-    transform: translateY(-20%);
+@keyframes fadeIn {
+  0% {
     opacity: 0.01;
-    width:auto;
   }
-  100%{
-    transform: translateY(0%);
+  100% {
     opacity: 1;
   }
 }
 
-.main-page{
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.main-page {
   animation-duration: 2s;
   animation-name: fadeIn;
 }
 
-.options{
-  animation-duration: 2s;
-  animation-name: fadeIn; 
-}
-
-.navbar{
+.options {
   animation-duration: 2s;
   animation-name: fadeIn;
 }
 
+.navbar {
+  animation-duration: 2s;
+  animation-name: fadeIn;
+}
