@@ -1,11 +1,17 @@
 {
     "about": {
-        "content": "Welcome to my portfolio! My name is Ojas Baral and I'm a sophomore at the University of Colorado Boulder, where I'm pursuing a Bachelor of Science in Computer Science with a minor in Business. As an aspiring software engineer, I'm constantly driven to explore and create innovative solutions. In addition to my academic pursuits, I have worked on various personal projects that have allowed me to hone my skills and expand my knowledge. During my free time, I enjoy immersing myself in coding and pushing the boundaries of what's possible. Feel free to browse through my portfolio and learn more about my journey in the world of software development.",
-        "GPA": "3.96/4.0",
-        "DL": "Fall 2022 - Spring 2023",
-        "RC": "Starting Computing, Data Structures, Computer Systems, Software Development, Database Systems"
+        "content": "Welcome to my portfolio! My name is Ojas Baral and I'm a sophomore at the University of Colorado Boulder, where I'm pursuing a Bachelor of Science in Computer Science with a minor in Business. As an aspiring software engineer, I'm constantly driven to explore and create innovative solutions. In addition to my academic pursuits, I have worked on various personal projects that have allowed me to hone my skills and expand my knowledge. During the summer of 2024, I will be interning at Humana as an IT Intern. During my free time, I enjoy immersing myself in coding and pushing the boundaries of what's possible. Feel free to browse through my portfolio and learn more about my journey in the world of software development.",
+        "GPA": "3.975/4.0",
+        "DL": "Fall 2022 - Fall 2023",
+        "RC": "Starting Computing, Data Structures, Computer Systems, Software Development, Database Systems, Algorithms, Fundamentals of Human Computer Interaction"
     },
     "exp": [
+        {
+            "company": "Humana",
+            "title": "Information Technology Intern",
+            "time": "May - August 2024",
+            "tasks": ["Incoming"]
+        },
         {
             "company": "Lavner Education",
             "title": "Information Technology Intern",
@@ -18,7 +24,6 @@
             "name": "One Take A Day",
             "tech": "JavaScript, ReactJS, Node.js, Express.js, PostgreSQL, Tailwind CSS, Render",
             "time": "June - July 2023",
-            "website": "https://www.onetakeaday.com",
             "github": "https://github.com/ojasbaral/one-take-a-day",
             "desc": ["Web application allowing registered users to post sports opinions with like/comment, follow, and hashtag functionality", "Developed a REST API using appropriate HTTP methods to handle data interactions between the frontend and backend.", "Utilized JWT libraries and frameworks to integrate token-based authentication into API endpoints and web-routes.", "Designed and implemented relational database models using PostgreSQL, establishing relationships such as one-to-one, one-to-many, and many-to-many to efficiently organize and query data.", "Leveraged SQL’s powerful features such as JOINs, subqueries and aggregate functions to write effective queries which efficiently retrieve and manipulate data from multiple tables", "Developed an aesthetically pleasing and efficient user interface by leveraging ReactJS and Tailwind CSS.", " Leveraged Render’s platform to deploy the frontend, backend, and database infrastructure, streamlining the deployment process and minimizing setup complexities."]
         },
