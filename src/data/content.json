@@ -1,16 +1,16 @@
 {
     "about": {
-        "content": "Welcome to my portfolio! My name is Ojas Baral and I'm a sophomore at the University of Colorado Boulder, where I'm pursuing a Bachelor of Science in Computer Science with a minor in Business. As an aspiring software engineer, I'm constantly driven to explore and create innovative solutions. In addition to my academic pursuits, I have worked on various personal projects that have allowed me to hone my skills and expand my knowledge. During the summer of 2024, I will be interning at Humana as an IT Intern. During my free time, I enjoy immersing myself in coding and pushing the boundaries of what's possible. Feel free to browse through my portfolio and learn more about my journey in the world of software development.",
-        "GPA": "3.975/4.0",
-        "DL": "Fall 2022 - Fall 2023",
-        "RC": "Starting Computing, Data Structures, Computer Systems, Software Development, Database Systems, Algorithms, Fundamentals of Human Computer Interaction"
+        "content": "Welcome to my portfolio! My name is Ojas Baral and I'm a junior at the University of Colorado Boulder, where I'm pursuing a Bachelor of Science in Computer Science with a minor in Business. As an aspiring software engineer, I'm constantly driven to explore and create innovative solutions. In addition to my academic pursuits, I have worked on various personal projects that have allowed me to hone my skills and expand my knowledge. During my free time, I enjoy immersing myself in coding and pushing the boundaries of what's possible. Feel free to browse through my portfolio and learn more about my journey in the world of software development.",
+        "GPA": "3.98/4.0",
+        "DL": "Fall 2022 - Spring 2023",
+        "RC": "Starting Computing, Data Structures, Computer Systems, Software Development, Database Systems, Algorithms, Fundamentals of Human Computer Interaction, Intro to Data Science, Operating Systems, Principles of Programming Languages"
     },
     "exp": [
         {
             "company": "Humana",
-            "title": "Information Technology Intern",
+            "title": "Software Engineering Intern",
             "time": "May - August 2024",
-            "tasks": ["Incoming"]
+            "tasks": ["Utilized SwaggerHub and OpenAPI specifications to design two RESTful API's to ensure robust API functionality and promote reusability to limit API sprawl while following enterprise standards.", "Built a reactive, non-blocking SOAP client in Java using Spring WebFlux allowing for better API performance.", "Updated outdated documentation on Humana’s REST API standards and Java libraries by examining existing Enterprise APIs throughout Humana, as well as reviewing Humana’s libraries built for API development.", "Educated various teams within Humana on creating OpenAPI specifications as well as using SwaggerHub and Humana github pipelines by creating process documentation and leading ad hoc meetings."]
         },
         {
             "company": "Lavner Education",
@@ -37,9 +37,9 @@
         }
     ],
     "additional": {
-        "PL": "JavaScript, Python, C++, SQL (PostgreSQL), NoSQL (MongoDB), HTML, CSS",
-        "libraries": "ReactJS, Express.js, Node.js, Tailwind CSS",
-        "tools": "Git, Visual Studio Code",
+        "PL": "JavaScript, Python, C++, Java, SQL (PostgreSQL), NoSQL (MongoDB), HTML, CSS",
+        "libraries": "ReactJS, Express.js, Node.js, Java Spring, Tailwind CSS, OpenAPI",
+        "tools": "Git, Visual Studio Code, SwaggerHub",
         "linkedin": "https://www.linkedin.com/in/ojasbaral/",
         "github": "https://github.com/ojasbaral/",
         "email": "ojas.baral@gmail.com"
