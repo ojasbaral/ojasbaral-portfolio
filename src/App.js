@@ -10,22 +10,31 @@ function App() {
   <>
     <div className="h-screen max-w-[1560px] grid place-items-center grid-flow-row m-auto">
       <Header></Header>
-      <div className="text-center main-page">
-        <h1 className="text-4xl font-bold pb-2 text-dblue">Ojas Baral</h1>
-        <h1 className="text-lg pb-2">Computer Science Student</h1>
-        <h1><a className="text-[#3562ff] hover:underline cursor-pointer" href="https://www.linkedin.com/in/ojasbaral" target="_blank">https://www.linkedin.com/in/ojasbaral</a ></h1>
-        <h1><a className="text-[#3562ff] hover:underline cursor-pointer" href="https://github.com/ojasbaral" target="_blank">https://github.com/ojasbaral</a ></h1>
-      </div>
-    </div>
+
+
+        <div className="text-center main-page">
+          <h1 className="text-4xl font-bold pb-2 text-dblue">Ojas Baral</h1>
+          <h1 className="text-lg pb-2">Computer Science Student</h1>
+          <h1><a className="text-[#3562ff] hover:underline cursor-pointer" href="https://www.linkedin.com/in/ojasbaral" target="_blank">https://www.linkedin.com/in/ojasbaral</a ></h1>
+          <h1><a className="text-[#3562ff] hover:underline cursor-pointer" href="https://github.com/ojasbaral" target="_blank">https://github.com/ojasbaral</a ></h1>
+        </div>
+        </div>
     <div id="about" className="h-[75px]"></div>
 
     <div className="max-w-[1200px] m-auto p-4">
       <h1 className="text-2xl text-dblue">About</h1>
-      <h1 className="pt-4">{content.about.content}</h1>
+      <div className="flex pt-4">
+        <div className="hidden md:w-1/4 md:pr-8 md:flex md:items-center">
+          <img src={`${process.env.PUBLIC_URL}/boulder.png`} alt="University of Colorado Boulder Logo" className="w-full h-auto rounded-lg" />
+        </div>
+        <div className="md:w-3/4">
+          <h1 className="pt-4">{content.about.content}</h1>
 
-      <h1 className="pt-8">GPA: {content.about.GPA}</h1>
-      <h1>Dean's List: {content.about.DL}</h1>
-      <h1>Relevant Coursework: {content.about.RC} </h1>
+          <h1 className="pt-8">GPA: {content.about.GPA}</h1>
+          <h1>Dean's List: {content.about.DL}</h1>
+          <h1>Relevant Coursework: {content.about.RC} </h1>
+        </div>
+      </div>
     </div>
 
     <div id="experience" className="h-[75px]"></div>
@@ -33,18 +42,26 @@ function App() {
     <div className="max-w-[1200px] m-auto p-4">
       <h1 className="text-2xl text-dblue">Experience</h1>
       {content.exp.map((work, index) => (
-        <div id={index} className="pt-4">
-          <h1 className="text-lg">{work.company}</h1>
-          <div className="flex justify-between text-base">
-          <h1 className="italic">{work.title}</h1>
-          <h1>{work.time}</h1>
-          </div>
-          <ul className="pt-2 pl-4">
-            {work.tasks?.map((task, index) => (
-              <li className=" list-disc list-outside pb-1" id={index}>{task}</li>
-            ))}
-          </ul>
-        </div>
+        <div key={index} className="flex pt-4">
+    {/* Image container */}
+    <div className="hidden md:w-1/4 md:pr-8 md:flex md:items-center">
+      <img src={`${process.env.PUBLIC_URL}/${work.image}`} alt={`${work.company} logo`} className="w-full h-auto rounded-lg" />
+    </div>
+    
+    {/* Experience details */}
+    <div className="md:w-3/4">
+      <h1 className="text-lg">{work.company}</h1>
+      <div className="flex justify-between text-base">
+        <h1 className="italic">{work.title}</h1>
+        <h1>{work.time}</h1>
+      </div>
+      <ul className="pt-2 pl-4">
+        {work.tasks?.map((task, taskIndex) => (
+          <li key={taskIndex} className="list-disc list-outside pb-1">{task}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
       ))}
     </div>
 
@@ -94,7 +111,7 @@ function App() {
 
     {<div className="max-w-[1200px] m-auto pb-8 pt-20">
       <div className="bottom flex justify-around gap-4 items-center">
-        <img className="md:w-[500px] w-[300px]" src={Img} alt="Ojas Baral"></img>
+        <img className="md:w-[500px] w-[300px] rounded-lg" src={Img} alt="Ojas Baral"></img>
         
         <h1 className="md:text-4xl text-2xl font-bold text-center w-[300px] md:w-[500px]">Thank you for checking out my portfolio, I have more coming!</h1>
         

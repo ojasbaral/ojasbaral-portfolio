@@ -10,12 +10,14 @@
             "company": "Humana",
             "title": "Software Engineering Intern",
             "time": "May - August 2024",
+            "image": "humana.jpg",
             "tasks": ["Utilized SwaggerHub and OpenAPI specifications to design two RESTful API's to ensure robust API functionality and promote reusability to limit API sprawl while following enterprise standards.", "Built a reactive, non-blocking SOAP client in Java using Spring WebFlux allowing for better API performance.", "Updated outdated documentation on Humana’s REST API standards and Java libraries by examining existing Enterprise APIs throughout Humana, as well as reviewing Humana’s libraries built for API development.", "Educated various teams within Humana on creating OpenAPI specifications as well as using SwaggerHub and Humana github pipelines by creating process documentation and leading ad hoc meetings."]
         },
         {
             "company": "Lavner Education",
             "title": "Information Technology Intern",
             "time": "June - August 2023",
+            "image": "lavner.png",
             "tasks": ["Installed and configured software applications on clients devices to enhance learning experiences for students.", "Delivered technical support and troubleshooting assistance to students, promptly addressing on-site software-related issues and minimizing downtime with no outrage longer than 30 minutes.", "Mentored 10 students on coding languages such as Python and Java, imparting fundamental programming concepts and fostering proficiency in software development resulting in competence with skills like object-orienting programming", "Facilitated the learning of machine learning and web development to students, equipping students with the ability todesign their own machine learning models or develop an efficient functioning web application.", "Instructed and guided 10 students in the programming of robots, fostering their understanding of robotics principles and empowering them to develop functional and interactive robot applications."]
         }
     ],
