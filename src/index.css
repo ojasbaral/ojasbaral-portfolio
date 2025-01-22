@@ -17,33 +17,39 @@
   color-scheme: dark;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .elements,
   .menu {
     display: none;
   }
-
-}
+} */
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0.01;
+  from {
+    opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
 
 @keyframes fadeOut {
-  0% {
+  from {
     opacity: 1;
   }
-  100% {
+  to {
     opacity: 0;
-    display: none;
   }
 }
-.main-page {
+
+.fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease-out forwards;
+}
+/* .main-page {
   animation-duration: 2s;
   animation-name: fadeIn;
 }
@@ -56,4 +62,41 @@
 .navbar {
   animation-duration: 2s;
   animation-name: fadeIn;
+} */
+
+.navbar li {
+  @apply cursor-pointer hover:text-dblue transition-colors font-semibold text-3xl sm:text-base bg-dblue bg-opacity-0;
+}
+
+.navbar li a {
+  @apply bg-dblue bg-opacity-0;
+}
+
+.sidebar li {
+  @apply my-4;
+  @apply w-auto;
+}
+
+.close:hover {
+  fill: #6495ed;
+}
+
+.close {
+  @apply transition-colors;
+}
+
+.menu {
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.menu-visible {
+  backdrop-filter: blur(10px);
+  opacity: 1;
+}
+
+.menu-hidden {
+  backdrop-filter: blur(0px);
+  opacity: 0;
 }
