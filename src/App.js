@@ -8,7 +8,7 @@ import { CSSTransition } from "react-transition-group";
 function App() {
   return (
     <>
-      <div className="h-screen max-w-[1560px] grid grid-rows-[auto, 1fr] sm:overflow-hidden">
+      <div className="mx-auto h-screen max-w-[1560px] grid grid-rows-[auto, 1fr] sm:overflow-hidden">
         <Header></Header>
 
         <div className="text-center main-page m-auto">

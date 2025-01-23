@@ -79,7 +79,7 @@ const Header = () => {
         id="divnav"
       >
         <ul
-          className={`sm:mt-2 bg-opacity-0 sm:bg-opacity-50 bg-[#1f1f1f] sm:p-4 rounded-full navbar list-none justify-center items-center h-screen sm:h-auto gap-8 mx-auto flex sm:flex-row flex-col text-center transition-all duration-300 ease-out`}
+          className={`sm:backdrop-blur-sm sm:mt-2 bg-opacity-0 sm:bg-opacity-50 bg-[#1f1f1f] sm:p-4 rounded-full navbar list-none justify-center items-center h-screen sm:h-auto gap-8 mx-auto flex sm:flex-row flex-col text-center transition-all duration-300 ease-out`}
         >
           <li>
             <a href="#about" onClick={() => toggleMenu()}>
